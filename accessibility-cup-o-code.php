@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Cup O Code Accessibility Tools Plugin
  * Description: Adds an accessibility icon on the bottom left that opens a panel with options: Increase/Decrease Text, Grayscale, High Contrast, Negative Contrast, Light Background, Links Underline, Readable Font, and Reset.
- * Version: 1.1.1
+ * Version: 1.1
  * Author: Cup O Code
  */
 
@@ -32,7 +32,7 @@ function atp_add_accessibility_panel() {
             left: 20px;
             cursor: pointer;
             background: #fff;
-    		padding: 1px;
+    		padding: 2px;
     		border-radius: 100px;
             transition: transform 0.3s ease;
         }
