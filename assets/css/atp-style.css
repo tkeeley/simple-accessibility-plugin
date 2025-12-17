@@ -1,0 +1,86 @@
+/* Disable transitions on the content wrapper so font-size changes are instant */
+/* Removed aggressive global transition disable to prevent conflict with sliders */
+
+/* Accessibility Icon and Panel: fixed and not affected by filters */
+#atp-accessibility-icon,
+#atp-accessibility-panel {
+    position: fixed;
+    z-index: 10000;
+    filter: none !important;
+    transform: translateZ(0);
+}
+#atp-accessibility-icon {
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    background: #fff;
+    padding: 2px;
+    border-radius: 100px;
+    transition: transform 0.3s ease;
+}
+#atp-accessibility-icon:hover {
+    transform: scale(1.1);
+}
+#atp-accessibility-icon img {
+    width: 40px;
+    height: 40px;
+}
+#atp-accessibility-panel {
+    display: none;
+    bottom: 80px;
+    left: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 260px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: opacity 0.3s ease;
+}
+#atp-accessibility-panel h4 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    color: #333;
+}
+#atp-accessibility-panel button {
+    margin: 6px 0;
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 4px;
+    background: #0073aa;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+#atp-accessibility-panel button:hover {
+    background: #005177;
+}
+#atp-reset {
+    background: #d63638;
+}
+#atp-reset:hover {
+    background: #a72b2f;
+}
+/* Accessibility States applied to the main content container */
+#atp-accessibility-content.atp-high-contrast {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+#atp-accessibility-content.atp-negative-contrast {
+    filter: invert(100%);
+}
+#atp-accessibility-content.atp-grayscale {
+    filter: grayscale(100%);
+}
+#atp-accessibility-content.atp-light-background {
+    background-color: #fefefe !important;
+    color: #000 !important;
+}
+#atp-accessibility-content.atp-links-underline a {
+    text-decoration: underline !important;
+}
+#atp-accessibility-content.atp-readable-font {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
